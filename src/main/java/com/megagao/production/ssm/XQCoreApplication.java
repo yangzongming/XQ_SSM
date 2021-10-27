@@ -7,10 +7,13 @@ package com.megagao.production.ssm;
 //import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 //@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 //@EnableEurekaClient
+@Configuration
+@ComponentScan
 public class XQCoreApplication {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring/springmvc-servlet.xml");
