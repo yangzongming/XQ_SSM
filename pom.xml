@@ -1,11 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.hqu</groupId>
   <artifactId>production_ssm</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  
+
   <dependencies>
   	<!-- 时间操作组件 -->
 	<dependency>
@@ -98,7 +98,7 @@
 	    <artifactId>mysql-connector-java</artifactId>
 	    <version>8.0.11</version>
 	</dependency>
-	
+
 	<!-- 连接池 -->
 	<dependency>
 		<groupId>com.alibaba</groupId>
@@ -195,7 +195,7 @@
 	   <artifactId>hibernate-validator</artifactId>
 	   <version>4.3.0.Final</version>
 	</dependency>
-	<!-- 其他 -->	
+	<!-- 其他 -->
   	<dependency>
 	    <groupId>org.aspectj</groupId>
 	    <artifactId>aspectjweaver</artifactId>
@@ -230,7 +230,7 @@
 			  <include>**/*.properties</include>
 			  <include>**/*.xml</include>
 		  </includes>
-	  </resource>	
+	  </resource>
 	</resources>
 	<plugins>
 		<!-- 资源文件拷贝插件 -->
@@ -252,6 +252,10 @@
 				<target>1.7</target>
 				<encoding>UTF-8</encoding>
 			</configuration>
+		</plugin>
+		<plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
 		</plugin>
   	</plugins>
   </build>
